@@ -85,7 +85,7 @@ class BattleGame {
             p1Display.innerText = `P1: ${this.player1Point}`;
             p2Display.innerText = `P2: ${this.player2Point}`;
             
-            await new Promise(resolve => setTimeout(resolve, 300));
+            await new Promise(resolve => setTimeout(resolve, 500));
             currentTurn++;
         }
 
