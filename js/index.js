@@ -7,109 +7,109 @@ const gameStrategies = [
         id: 1,
         name: "Tit-for-Tat",
         description: "Starts with Cooperation. In every subsequent round, it repeats the exact move the opponent made in the previous round.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784563704158_e37b07b385fc9ad977a28d800233caf4.jpg"
     },
     {
         id: 2,
         name: "Tit-for-Two-Tats",
         description: "Starts with Cooperation. It only defects if the opponent has defected in both of the last two consecutive rounds.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784563714945_afe08cc86d647fe8e0863159fad19e4f.jpg"
     },
     {
         id: 3,
         name: "Two-Tits-for-Tat",
         description: "Starts with Cooperation. If the opponent defects once, it responds by defecting for the next two rounds in a row.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784585962648_402b8817089560e9299adb11a9814040.jpg"
     },
     {
         id: 4,
         name: "Generous Tit-for-Tat",
         description: "Plays like Tit-for-Tat but includes a 20% random probability of cooperating even when the opponent has just defected.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784580590777_a69e64b97d21469764640654eaf378fc.jpg"
     },
     {
         id: 5,
         name: "Gradual",
         description: "Starts with Cooperation. Each time the opponent defects, it retaliates with a sequence of betrayals that increases in length (1st time: 1 round, 2nd time: 2 rounds, etc.), followed by two rounds of Cooperation.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784580591673_63470e7ea97c861f2251597e8b2c89d9.jpg"
     },
     {
         id: 6,
         name: "Grim Trigger",
         description: "Starts with Cooperation. It continues to cooperate until the opponent defects exactly once; after that, it defects for all remaining rounds.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784597379625_7e317ec35042a04f91e8f12bea5753fb.jpg"
     },
     {
         id: 7,
         name: "Fool Me Once",
         description: "Starts with Cooperation and ignores the first betrayal. If a second betrayal occurs at any point, it switches to permanent Defection until the game ends.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784601391825_9a3cc81c21c0991a448e7a2575f237ca.jpg"
     },
     {
         id: 8,
         name: "Always Cooperate",
         description: "Chooses Cooperation in every single round, regardless of the opponent's moves or the history of the game.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784633380349_817cbf90c6d3d6313f65b2db182e6e0a.jpg"
     },
     {
         id: 9,
         name: "Always Defect",
         description: "Chooses Betrayal/Defection in every single round, regardless of the opponent's moves or the history of the game.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784606891221_ca3132906884e1c2ba9ec0070ab420ae.jpg"
     },
     {
         id: 10,
         name: "Detective",
         description: "Executes a fixed opening: [Coop, Defect, Coop, Coop]. If the opponent never retaliates against the betrayal, it switches to Always Defect. Nếu đối thủ có đánh trả, nó chuyển sang chơi Tit-for-Tat.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784612276673_678a618209826394bc0f154897230d6f.jpg"
     },
     {
         id: 11,
         name: "Prober",
         description: "Starts by defecting in the first round. If the opponent retaliates in the second round, it plays Tit-for-Tat. If the opponent does not retaliate, it continues to defect.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784612284223_788bf1ed9b991b273cf29b7c7ab88d3b.jpg"
     },
     {
         id: 12,
         name: "Joss",
         description: "Plays the Tit-for-Tat logic but has a 10% chance in any round to switch a Cooperation move into a Defection move.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784633380631_2e14983ec8971c8c74b15382b0aa375f.jpg"
     },
     {
         id: 13,
         name: "Handshake",
         description: "Defects in round 1 and Cooperates in round 2. If the opponent's first two moves match this sequence, it cooperates forever; otherwise, it defects forever.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784637960215_abd6fb4029059e0ec86760291a584c04.jpg"
     },
     {
         id: 14,
         name: "Pavlov",
         description: "Repeats its last move if it and the opponent made the same choice (both Coop or both Defect). If the choices were different, it switches to the opposite of its last move.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784656719173_bc7630fbf02b9cb1a89a5f245421c095.jpg"
     },
     {
         id: 15,
         name: "Win-Stay, Lose-Shift",
         description: "Retains its current choice as long as the opponent cooperates. If the opponent defects, it immediately switches its action for the next round.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784656712227_c00da9028e60a5151e685d0bc27cd493.jpg"
     },
     {
         id: 16,
         name: "Adaptive",
         description: "Plays a fixed set of moves initially. It then calculates which of its own actions yielded the highest average score during that period and uses only that action for the rest of the game.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784656732576_6d3a163d6243b0fa7bdfd570b3f21e23.jpg"
     },
     {
         id: 17,
         name: "Sneaky",
         description: "Attempts an early betrayal. If the opponent retaliates, it performs a fixed sequence of Cooperation rounds as an 'apology' before returning to its primary logic.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784656705304_017ccd9470e0a5847780575eb153230c.jpg"
     },
     {
         id: 18,
         name: "Random",
         description: "Decides between Cooperation and Defection in every round using a 50/50 probability, ignoring all game history.",
-        image: "./assets/images.jpg"
+        image: "./assets/z7784656721289_fdcfa6cca7ce9e449a6eb36b83859e79.jpg"
     }
 ]
 
