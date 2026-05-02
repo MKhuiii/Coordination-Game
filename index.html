@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGC</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant+SC:wght@300;400;500;600;700&family=Imbue:opsz,wght@10..100,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vidaloka&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="body-container">
         <span class="title">Coordination Game</span>
-        <button class="start-btn" onclick="startGame(1)">Single</button>
-        <button class="start-btn" onclick="startGame(2)">Tournament</button>
+        
+        <div class="inline-rules">
+            <h3><i class="fa-solid fa-circle-info"></i> Game Rules</h3>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-handshake color-cooperate"></i> + <i class="fa-solid fa-handshake color-cooperate"></i> 
+                    <span>Both get <b>+1</b></span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hand-fist color-defect"></i> + <i class="fa-solid fa-hand-fist color-defect"></i> 
+                    <span>Both get <b>-1</b></span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hand-fist color-defect"></i> + <i class="fa-solid fa-handshake color-cooperate"></i> 
+                    <span>Winner <b>+2</b>, Loser <b>-1</b></span>
+                </li>
+            </ul>
+        </div>
+
+        <button class="start-btn" onclick="choosingStage()"><i class="fa-solid fa-play"></i> Single Battle</button>
     </div>
     <button id="final-start-btn" style="display: none;">START GAME</button>
     <script src="./js/strategies.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/battle.js"></script>
 </body>
 </html>
