@@ -60,7 +60,7 @@ const gameStrategies = [
     {
         id: 10,
         name: "Detective",
-        description: "Executes a fixed opening: [Coop, Defect, Coop, Coop]. If the opponent never retaliates against the betrayal, it switches to Always Defect. Nếu đối thủ có đánh trả, nó chuyển sang chơi Tit-for-Tat.",
+        description: "Executes a fixed opening sequence: [Cooperate, Defect, Cooperate, Cooperate]. If the opponent never retaliates against the betrayal, it switches to Always Defect. If the opponent strikes back, it switches to playing Tit-for-Tat.",
         image: "./assets/z7784612276673_678a618209826394bc0f154897230d6f.jpg"
     },
     {
